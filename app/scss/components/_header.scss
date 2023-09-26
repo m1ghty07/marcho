@@ -40,6 +40,14 @@
     & + & {
       margin-left: 25px;
     }
+    svg path {
+      transition: fill .3s;
+    }
+  }
+  &__link:hover {
+    svg path {
+      fill: $accent;
+    }
   }
   &__num {
     position: absolute;
@@ -54,4 +62,5 @@
     text-align: center;
     line-height: 20px;
   }
+ 
 }
