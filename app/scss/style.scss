@@ -1,7 +1,12 @@
+// Global styles
 @import 'vars';
 @import 'fonts';
 @import 'reset';
 @import 'global';
+
+// Components
+@import './components/header';
+@import './components/footer';
 
 
 
