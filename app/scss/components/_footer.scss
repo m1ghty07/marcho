@@ -18,6 +18,7 @@
   &__item:nth-child(2),
   &__item:nth-child(3) {
     max-width: 170px;
+    width: 100%;
     margin-right: 30px;
   }
   &__item:last-child {
@@ -60,8 +61,14 @@
     margin-bottom: 40px;
   }
   &__link {
+    transition: color 0.3s;
     margin-bottom: 14px;
     display: block;
+  }
+  &__list-item:hover {
+    .footer-top__link {
+      color: $accent;
+    }
   }
   &__text {
     margin-bottom: 25px;
@@ -73,6 +80,11 @@
     border: none;
     padding: 12px 10px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    transition: all 0.3s ease;
+    &:focus {
+      outline: 1px solid $accent;
+      box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.7);
+    }
     &::placeholder {
       color: $default;
       font-size: 16px;
@@ -87,6 +99,10 @@
     cursor: pointer;
     @extend %roboto-400;
     box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    transition: box-shadow 0.5s ease;
+    &:hover {
+      box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.5);
+    }
   }
 }
 
