@@ -1,13 +1,14 @@
 // Global styles
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
 // Components
-@import './components/header';
-@import './components/footer';
+@import "./components/header";
+@import "./components/slider";
+@import "./components/button";
+@import "./components/footer";
 
-
-
-@import 'media';
+@import "media";
