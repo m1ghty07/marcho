@@ -17,21 +17,19 @@
     color: $title;
     @extend %quicksand-400;
     text-transform: uppercase;
-    padding-bottom: 1px;
-    transition: all .3s;
+    padding-bottom: 0 2px 1px;
+    transition: all 0.3s;
+    @extend %roboto-700;
     &:hover {
-        color: $accent;
-        border-bottom: 1px solid $accent;
-        @extend %quicksand-500;
-      }
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
   }
   &__link--active {
     color: $accent;
     border-bottom: 1px solid $accent;
-    @extend %quicksand-500;
   }
 }
-
 
 .user-nav {
   display: flex;
@@ -41,7 +39,7 @@
       margin-left: 25px;
     }
     svg path {
-      transition: fill .3s;
+      transition: fill 0.3s;
     }
   }
   &__link:hover {
@@ -62,5 +60,4 @@
     text-align: center;
     line-height: 20px;
   }
- 
 }
