@@ -1,0 +1,7 @@
+.title {
+  text-align: center;
+  @extend %roboto-700;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: $title;
+}

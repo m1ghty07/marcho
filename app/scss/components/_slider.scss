@@ -1,6 +1,6 @@
 .slider {
   background-color: $bg;
-  padding-top: 65px 0 45px;
+  padding: 65px 0 45px;
   &__container {
     max-width: 1520px;
   }
@@ -38,6 +38,7 @@
         position: relative;
         padding: 0;
         font-size: 0;
+        cursor: pointer;
         background-color: transparent;
         width: 26px;
         height: 26px;

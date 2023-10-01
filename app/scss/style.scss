@@ -5,9 +5,11 @@
 @import "libs";
 @import "global";
 
-// Components
+// Components & sections
 @import "./components/header";
 @import "./components/slider";
+@import "./components/title";
+@import "./sections/categories";
 @import "./components/button";
 @import "./components/footer";
 
