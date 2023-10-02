@@ -38,6 +38,9 @@
       .categories__item-link:hover {
         color: $accent;
       }
+      .categories__item-link {
+        padding-bottom: 0;
+      }
     }
     &:nth-child(3) {
       .categories__item-subtitle,
@@ -63,7 +66,6 @@
   }
   &__item-link {
     @extend %roboto-400;
-    display: inline;
     text-transform: uppercase;
     color: $title;
     padding-bottom: 4px;
