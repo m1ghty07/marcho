@@ -10,3 +10,9 @@ $(function () {
 $('[data-fancybox="gallery"]').fancybox({
   // Options will go here
 });
+
+$(".star").rateYo({
+  starWidth: "18px",
+  normalFill: "#ccccce",
+  readOnly: true
+});
