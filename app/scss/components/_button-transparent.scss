@@ -1,0 +1,15 @@
+.link {
+  @extend %roboto-400;
+  color: $title;
+  line-height: 1;
+  padding: 15px 25px;
+  border: 1px solid $accent;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $accent;
+    filter: brightness(1.5);
+    color: #fff;
+  }
+}
