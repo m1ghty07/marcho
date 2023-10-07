@@ -1,0 +1,55 @@
+.auth {
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
+  &__tabs {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__tab {
+    @extend %roboto-400;
+    font-size: 22px;
+    color: #909090;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+  &__tab--active {
+    color: $accent;
+    @extend %roboto-700;
+  }
+  &__label {
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__input {
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    height: 60px;
+    padding: 0 15px;
+    color: #000;
+    font-size: 20px;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    background-color: $title;
+    @extend %roboto-400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #29282ded;
+    }
+  }
+  &__reset {
+    margin-top: 12px;
+    display: inline-block;
+    color: $accent;
+  }
+}

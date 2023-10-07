@@ -75,20 +75,46 @@
     <section class="top">
       <div class="top__container" style="background-image: url('images/top-bg.jpg');">
         <div class="container">
-          <h2 class="top__title title">Page</h2>
+          <h2 class="top__title title">Log In</h2>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="#">Home</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Page</a>
+                <a class="breadcrumbs__link" href="#">Log In</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="auth">
+      <div class="container">
+        <div class="auth__tabs">
+          <a class="auth__tab" href="#">Register</a>
+          <a class="auth__tab auth__tab--active" href="#">Login</a>
+        </div>
+        <form class="auth__form" action="/">
+          <label class="auth__label" for="user-name">
+            Username or email address*
+            <input class="auth__input" type="text" name="username" id="user-name" required>
+          </label>
+          <label class="auth__label" for="password">
+            Password*
+            <input class="auth__input" type="password" name="password" id="password" required>
+          </label>
+          <label class="auth__label" for="remember-me">
+            <input required type="checkbox" name="remember" id="remember-me">
+            Remember me
+          </label>
+          <button class="auth__btn" type="submit">Log In</button>
+          <a class="auth__reset" href="#">Lost your password?</a>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
