@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header--404-page">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
@@ -72,20 +72,23 @@
   </header>
 
   <main class="main">
-    <section class="top">
-      <div class="top__container" style="background-image: url('images/top-bg.jpg');">
-        <div class="container">
-          <h2 class="top__title title">Log In</h2>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Home</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Log In</a>
-              </li>
-            </ul>
+    <section class="not-found">
+      <div class="container">
+        <div class="not-found__inner">
+          <div class="not-found__content">
+            <h4 class="not-found__title title">
+              OPPS! Page Not Found!!
+            </h4>
+            <div class="not-found__text">
+              <p>
+                We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the
+                web address not
+                find incorrectly.
+              </p>
+            </div>
+            <a class="not-found__link button" href="#">Back to home</a>
           </div>
+          <img class="not-found__img" src="images/error.svg" alt="Page not found image">
         </div>
       </div>
     </section>

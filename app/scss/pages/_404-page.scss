@@ -1,0 +1,25 @@
+.not-found {
+  padding: 115px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 570px;
+  }
+  &__title {
+    color: #28384f;
+    @extend %roboto-700;
+    text-transform: none;
+    margin-bottom: 40px;
+    text-align: start;
+  }
+  &__text {
+    margin-bottom: 45px;
+    max-width: 485px;
+  }
+  &__link {
+    padding: 14px 30px;
+  }
+}
