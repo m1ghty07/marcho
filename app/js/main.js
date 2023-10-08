@@ -1,3 +1,16 @@
+$(".filter-price__input").ionRangeSlider({
+  type: 'double',
+  prefix: '$',
+  onStart: function (data) {
+    $('.filter-price__from').text(data.from);
+    $('.filter-price__to').text(data.to);
+  },
+  onChange: function (data) {
+    $('.filter-price__from').text(data.from);
+    $('.filter-price__to').text(data.to);
+  },
+});
+
 $(function () {
   $(".slider__inner").slick({
     dots: true,
@@ -16,6 +29,8 @@ $(".star").rateYo({
   normalFill: "#ccccce",
   readOnly: true
 });
+
+
 
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
@@ -59,3 +74,4 @@ function initializeClock(id, endtime) {
 
 const deadline = document.querySelector('#countdown').getAttribute('data-time');
 initializeClock('countdown', deadline);
+

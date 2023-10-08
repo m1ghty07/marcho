@@ -1,0 +1,17 @@
+.filter-search {
+  &__form {
+    display: flex;
+  }
+  &__input {
+    border: none;
+    background-color: $bg;
+    padding: 0 5px 0 15px;
+    height: 50px;
+    width: 260px;
+  }
+  &__btn {
+    border: none;
+    padding: 17px;
+    box-shadow: none;
+  }
+}

@@ -19,11 +19,15 @@
 @import "./components/button";
 @import "./components/button-transparent";
 @import "./components/breadcrumbs";
+@import "./components/shop-filter";
+@import "./components/filter-search";
+@import "./components/filter-price";
 @import "./components/footer";
 
 // Pages
 @import "./pages/login";
 @import "./pages/register";
 @import "./pages/404-page";
+@import "./pages/shop";
 
 @import "media";

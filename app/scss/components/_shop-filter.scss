@@ -1,0 +1,14 @@
+.filter {
+  &__item {
+    padding: 35px 30px 40px;
+    border: 1px solid #ececec;
+    margin-bottom: 40px;
+  }
+  &__title {
+    @extend %roboto-400;
+    font-size: 22px;
+    color: $title;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+}
