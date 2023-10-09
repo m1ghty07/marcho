@@ -1,0 +1,71 @@
+.shop-filter {
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 0;
+  }
+  &__btn--active {
+    path {
+      fill: $accent;
+    }
+  }
+}
+
+.jq-selectbox__select {
+  height: 32px;
+  padding: 0 30px 0 0;
+  border: none;
+  margin-left: 30px;
+  background: transparent;
+  box-shadow: none;
+  color: $default;
+  text-shadow: none;
+  cursor: pointer;
+  @extend %quicksand-500;
+  &:hover {
+    background: transparent;
+  }
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 5px;
+  border: none;
+  background-image: url("../../images/icons/angle-down.svg");
+}
+
+.jq-selectbox__dropdown {
+  right: 0;
+  left: 0;
+}
+
+.jq-selectbox__dropdown ul {
+  border: 1px solid $bg;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.jq-selectbox li {
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.jq-selectbox li:hover {
+  background-color: #ececec;
+}

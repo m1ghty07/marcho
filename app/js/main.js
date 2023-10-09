@@ -17,15 +17,19 @@ $(function () {
       $('.filter-price__to').text(data.to);
     },
   });
+
   $('[data-fancybox="gallery"]').fancybox({
     // Options will go here
   });
   $(".star").rateYo({
     starWidth: "18px",
     normalFill: "#ccccce",
-    readOnly: true
+    readOnly: true,
   });
+  $('.select-style').styler();
 });
+
+
 
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
@@ -69,4 +73,5 @@ function initializeClock(id, endtime) {
 
 const deadline = document.querySelector('#countdown').getAttribute('data-time');
 initializeClock('countdown', deadline);
+
 

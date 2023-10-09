@@ -1,0 +1,16 @@
+.shop-content {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 45px;
+    grid-column-gap: 30px;
+  }
+  &__filter {
+    margin-bottom: 40px;
+    border: 1px solid #ececec;
+    padding: 20px 25px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
