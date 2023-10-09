@@ -1,0 +1,41 @@
+.filter-size {
+  &__input {
+    @extend %checkbox-hide;
+    &:checked + .filter-size__checkbox {
+      border: 1px solid $accent;
+      & + .filter-size__text {
+        color: $accent;
+      }
+    }
+    &:checked + .filter-size__checkbox::before {
+      content: "";
+      height: 8px;
+      width: 8px;
+      background-color: $accent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  &__label {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__checkbox {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid $default;
+    margin-left: -35px;
+    margin-top: 3px;
+    display: inline-block;
+    position: absolute;
+  }
+}

@@ -1,16 +1,3 @@
-$(".filter-price__input").ionRangeSlider({
-  type: 'double',
-  prefix: '$',
-  onStart: function (data) {
-    $('.filter-price__from').text(data.from);
-    $('.filter-price__to').text(data.to);
-  },
-  onChange: function (data) {
-    $('.filter-price__from').text(data.from);
-    $('.filter-price__to').text(data.to);
-  },
-});
-
 $(function () {
   $(".slider__inner").slick({
     dots: true,
@@ -18,19 +5,27 @@ $(function () {
     fade: true,
     autoplay: true,
   });
+  $(".filter-price__input").ionRangeSlider({
+    type: 'double',
+    prefix: '$',
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
+  $('[data-fancybox="gallery"]').fancybox({
+    // Options will go here
+  });
+  $(".star").rateYo({
+    starWidth: "18px",
+    normalFill: "#ccccce",
+    readOnly: true
+  });
 });
-
-$('[data-fancybox="gallery"]').fancybox({
-  // Options will go here
-});
-
-$(".star").rateYo({
-  starWidth: "18px",
-  normalFill: "#ccccce",
-  readOnly: true
-});
-
-
 
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
