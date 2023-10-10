@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  &__arrows {
+    position: relative;
+    text-transform: uppercase;
+  }
+  &__prev {
+    margin-right: 28px;
+  }
+  &__next {
+    margin-left: 28px;
+  }
+  &__prev::before,
+  &__next::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    height: 10px;
+    width: 5px;
+  }
+  &__prev::before {
+    background-image: url("../../images/icons/pagination-arrow-left.svg");
+    left: -15px;
+  }
+  &__next::after {
+    background-image: url("../../images/icons/pagination-arrow-right.svg");
+    right: -15px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding: 0 12px;
+    &:nth-child(4) {
+      padding: 0;
+    }
+  }
+  &__item--active {
+    color: $accent;
+  }
+}
