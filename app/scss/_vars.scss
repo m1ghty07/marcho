@@ -23,7 +23,8 @@ $bg: #f6f6f6;
   font-weight: 700;
 }
 
-%checkbox-hide {
+%checkbox-hide,
+%radio-hide {
   width: 1px;
   height: 1px;
   position: absolute;
