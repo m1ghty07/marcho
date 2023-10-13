@@ -249,3 +249,28 @@
     cursor: pointer;
   }
 }
+.product-tabs {
+  &__top {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 40px;
+    @extend %roboto-400;
+    font-size: 22px;
+  }
+  &__top-item {
+    display: inline-block;
+    padding-bottom: 10px;
+    & + & {
+      margin-left: 55px;
+    }
+  }
+  &__top-item--active {
+    color: $title;
+    border-bottom: 1px solid $accent;
+  }
+  &__content-item {
+    display: none;
+    &.product-tabs__content-item--active {
+      display: block;
+    }
+  }
+}
