@@ -1,0 +1,24 @@
+.related {
+  padding: 60px 0 120px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    & + & {
+      margin-left: 25px;
+    }
+  }
+  .product-card__img-box {
+    margin-bottom: 10px;
+  }
+  .product-card__title {
+    font-size: 18px;
+  }
+  .product-card__title {
+    padding: 5px 0;
+  }
+}
