@@ -1,0 +1,16 @@
+.blog-page {
+  padding: 120px 0 60px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 770px;
+    width: 100%;
+    margin-right: 30px;
+  }
+  &__aside {
+    max-width: 370px;
+    width: 100%;
+  }
+}

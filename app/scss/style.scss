@@ -32,6 +32,7 @@
 @import "./components/filter-tags";
 @import "./components/shop-content-filter";
 @import "./components/pagination";
+@import "./components/blog-article";
 @import "./components/footer";
 
 // Pages
@@ -40,5 +41,6 @@
 @import "./pages/404-page";
 @import "./pages/shop";
 @import "./pages/product";
+@import "./pages/blog-page";
 
 @import "media";

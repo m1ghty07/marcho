@@ -1,0 +1,29 @@
+.blog-article {
+  margin-bottom: 60px;
+  &__img {
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  &__item-link {
+    display: block;
+  }
+  &__item-box {
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 40px;
+  }
+  &__item-title {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  &__item-info.blog__info {
+    justify-content: flex-start;
+    .blog__author {
+      margin-right: 30px;
+    }
+  }
+}
