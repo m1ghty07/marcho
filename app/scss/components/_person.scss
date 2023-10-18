@@ -1,0 +1,37 @@
+.person {
+  text-align: center;
+  padding: 35px 25px 40px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  &__img {
+    margin: 0 auto 35px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: inline-block;
+  }
+  &__name {
+    @extend %roboto-700;
+    font-size: 18px;
+    color: $title;
+    margin-bottom: 10px;
+  }
+  &__position {
+    color: $accent;
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__social-link {
+    margin: 0 8px;
+    path {
+      fill: $default;
+    }
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+}
