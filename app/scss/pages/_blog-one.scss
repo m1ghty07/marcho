@@ -1,0 +1,133 @@
+.blog-one {
+  &__text {
+    border: 1px solid #ececec;
+    padding: 30px;
+    margin-top: -1px;
+    h4 {
+      color: $title;
+      font-size: 22px;
+      @extend %roboto-700;
+      margin: 25px 0;
+    }
+    p {
+      margin: 25px 0;
+    }
+    blockquote {
+      @extend %roboto-400;
+      font-size: 22px;
+      color: $title;
+      padding: 35px;
+      background-color: $bg;
+      border-left: 3px solid $accent;
+      margin: 25px 0;
+    }
+  }
+  &__info {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__info-link {
+    margin-right: 30px;
+    padding-left: 28px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 16px;
+      width: 16px;
+      background-image: url("../../images/icons/calendar.svg");
+    }
+  }
+  &__info-link--comments {
+    &::before {
+      background-image: url("../../images/icons/comments.svg");
+      top: 3px;
+    }
+  }
+  &__info-link--author {
+    &::before {
+      background-image: url("../../images/icons/user-blog.svg");
+    }
+  }
+  &__img-left {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  &__img-right {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  &__form-title {
+    color: $title;
+    text-transform: uppercase;
+    margin: 35px 0 25px;
+    @extend %roboto-700;
+    font-size: 24px;
+  }
+  .comments-form {
+    border-top: 1px solid #ececec;
+    border-bottom: none;
+    input:first-child {
+      margin-right: 30px;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    padding-top: 30px;
+    span {
+      text-transform: uppercase;
+      color: $title;
+      @extend %roboto-700;
+      font-size: 18px;
+    }
+  }
+  &__share {
+    a {
+      margin: 0 8px;
+      vertical-align: middle;
+      path {
+        fill: $default;
+      }
+      &:hover {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 40px;
+    margin: 40px 0;
+  }
+  &__author-img {
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    margin-right: 25px;
+  }
+  &__author-name {
+    @extend %roboto-700;
+    font-size: 22px;
+    color: $title;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  .comments-title {
+    @extend %roboto-700;
+    font-size: 24px;
+    color: $title;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+}
