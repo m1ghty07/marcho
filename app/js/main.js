@@ -114,4 +114,3 @@ function initializeClock(id, endtime) {
 const deadline = document.querySelector('#countdown').getAttribute('data-time');
 initializeClock('countdown', deadline);
 
-
