@@ -11,18 +11,36 @@
   padding: 70px 0 40px;
   border-bottom: 1px solid #ececec;
   display: flex;
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
   &__item:first-child {
     max-width: 250px;
     margin-right: 50px;
+    @media (max-width: 860px) {
+      min-width: 100%;
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
   }
   &__item:nth-child(2),
   &__item:nth-child(3) {
     max-width: 170px;
     width: 100%;
     margin-right: 30px;
+    @media (max-width: 450px) {
+      margin-bottom: 30px;
+    }
   }
   &__item:last-child {
     max-width: 470px;
+    @media (max-width: 1100px) {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+    @media (max-width: 450px) {
+      margin-top: 0;
+    }
   }
   &__logo {
     display: block;
@@ -59,6 +77,9 @@
     font-size: 22px;
     line-height: 1;
     margin-bottom: 40px;
+    @media (max-width: 450px) {
+      margin-bottom: 15px;
+    }
   }
   &__link {
     transition: color 0.3s;
@@ -73,6 +94,12 @@
   &__text {
     margin-bottom: 25px;
   }
+  &__form {
+    display: flex;
+    @media (max-width: 450px) {
+      flex-wrap: wrap;
+    }
+  }
   &__form-input {
     background-color: #fff;
     max-width: 320px;
@@ -81,6 +108,9 @@
     padding: 12px 10px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
     transition: all 0.3s ease;
+    @media (max-width: 450px) {
+      max-width: 100%;
+    }
     &:focus {
       outline: 1px solid $accent;
       box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.7);
@@ -93,20 +123,36 @@
   &__form-btn {
     border: none;
     padding: 12px 18px;
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 }
 
 .footer-bottom {
-  height: 75px;
+  min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 12px;
+  @media (max-width: 620px) {
+    justify-content: center;
+  }
+  &__copy {
+    @media (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
   &__accept {
     display: flex;
     align-items: center;
   }
   &__accept-img {
     margin-left: 25px;
+    @media (max-width: 450px) {
+      margin-left: 15px;
+    }
   }
 }
