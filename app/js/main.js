@@ -87,6 +87,13 @@ function getTimeRemaining(endtime) {
   };
 }
 
+const menuBtn = document.querySelector('.menu__btn');
+
+menuBtn.addEventListener('click', () => {
+  document.querySelector('.menu__list').classList.toggle('menu__list--active');
+  menuBtn.classList.toggle('menu__btn--active');
+})
+
 function initializeClock(id, endtime) {
   const clock = document.getElementById(id);
   const daysSpan = clock.querySelector('.days');
@@ -113,4 +120,3 @@ function initializeClock(id, endtime) {
 
 const deadline = document.querySelector('#countdown').getAttribute('data-time');
 initializeClock('countdown', deadline);
-
