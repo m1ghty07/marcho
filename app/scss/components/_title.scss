@@ -4,4 +4,12 @@
   font-size: 48px;
   text-transform: uppercase;
   color: $title;
+  @media (max-width: 620px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @media (max-width: 375px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
