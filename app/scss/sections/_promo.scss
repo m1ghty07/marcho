@@ -5,10 +5,20 @@
   background-position: center center;
   padding: 150px 0 160px;
   text-align: center;
+  @media (max-width: 768px) {
+    padding: 60px 0;
+    background-image: none;
+  }
+  @media (max-width: 450px) {
+    padding: 30px 0;
+  }
   &__inner {
     max-width: 570px;
     width: 100%;
     margin-left: auto;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
   }
   &__subtitle {
     margin-bottom: 20px;
@@ -18,11 +28,21 @@
   }
   &__title {
     margin-bottom: 50px;
+    @media (max-width: 450px) {
+      margin-bottom: 20px;
+    }
   }
   &__clock {
     margin-bottom: 55px;
     display: flex;
     align-items: center;
+    @media (max-width: 620px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 450px) {
+      margin-bottom: 30px;
+    }
   }
   &__clock-item {
     border-radius: 50%;
@@ -36,6 +56,18 @@
     justify-content: center;
     & + & {
       margin-left: 20px;
+      @media (max-width: 620px) {
+        margin-left: 35px;
+      }
+      @media (max-width: 450px) {
+        margin: 8px;
+      }
+    }
+    @media (max-width: 620px) {
+      margin: 20px 35px;
+    }
+    @media (max-width: 450px) {
+      margin: 8px;
     }
   }
   &__num {
@@ -48,38 +80,29 @@
 
 .partners {
   padding: 110px 0 50px;
+  @media (max-width: 620px) {
+    padding: 60px 0;
+  }
   &__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 620px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding-bottom: 60px;
+    }
   }
-}
-
-.Days {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 6757px;
-  z-index: 178;
-}
-._28_Days {
-  font-size: 48px;
-  font-family: "Roboto";
-  color: rgb(41, 40, 45);
-  font-weight: bold;
-  line-height: 0.542;
-  text-align: center;
-  position: absolute;
-  left: 1007.141px;
-  top: 4892.93px;
-  z-index: 177;
-}
-.Bg {
-  position: absolute;
-  left: 975px;
-  top: 4835px;
-  width: 121px;
-  height: 120px;
-  z-index: 176;
+  &__item {
+    @media (max-width: 620px) {
+      margin: 10px 35px;
+    }
+    @media (max-width: 500px) {
+      margin: 10px 21px;
+    }
+    @media (max-width: 450px) {
+      margin: 10px 25px;
+    }
+  }
 }
