@@ -1,16 +1,64 @@
 .blog-page {
   padding: 120px 0 60px;
+  @media (max-width: 620px) {
+    padding: 60px 0;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   &__content {
     max-width: 770px;
     width: 100%;
     margin-right: 30px;
+    @media (max-width: 1200px) {
+      margin-right: 0;
+      max-width: 100%;
+    }
   }
-  &__aside {
+  &__sidebar {
     max-width: 370px;
     width: 100%;
+    @media (max-width: 1200px) {
+      order: -1;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .person,
+    .latest-posts,
+    .filter-category,
+    .filter-tags {
+      display: none;
+    }
+    .filter-search__input {
+      width: 100%;
+    }
+    .blog-article__img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 620px) {
+    .blog-article__item-box {
+      padding: 20px;
+    }
+    .blog-article__img {
+      height: 260px;
+    }
+  }
+  @media (max-width: 375px) {
+    .filter-search {
+      padding: 30px 15px 30px;
+    }
+    .slick-prev {
+      left: 10px;
+    }
+    .slick-next {
+      right: 10px;
+    }
   }
 }

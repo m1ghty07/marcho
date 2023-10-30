@@ -12,6 +12,9 @@
     color: #909090;
     text-transform: uppercase;
     margin: 0 30px;
+    @media (max-width: 375px) {
+      margin: 0 15px;
+    }
   }
   &__tab--active {
     color: $accent;

@@ -3,6 +3,9 @@
     border: 1px solid #ececec;
     padding: 30px;
     margin-top: -1px;
+    @media (max-width: 620px) {
+      padding: 20px 10px;
+    }
     h4 {
       color: $title;
       font-size: 22px;
@@ -20,11 +23,17 @@
       background-color: $bg;
       border-left: 3px solid $accent;
       margin: 25px 0;
+      @media (max-width: 450px) {
+        padding: 10px;
+      }
     }
   }
   &__info {
     display: flex;
     margin-bottom: 25px;
+    @media (max-width: 620px) {
+      display: block;
+    }
   }
   &__info-link {
     margin-right: 30px;
@@ -73,6 +82,12 @@
     border-bottom: none;
     input:first-child {
       margin-right: 30px;
+      @media (max-width: 620px) {
+        margin-right: 0;
+      }
+    }
+    @media (max-width: 620px) {
+      padding-bottom: 0;
     }
   }
   &__box {
@@ -86,6 +101,10 @@
       color: $title;
       @extend %roboto-700;
       font-size: 18px;
+    }
+    @media (max-width: 500px) {
+      display: block;
+      margin: 0;
     }
   }
   &__share {
@@ -115,6 +134,9 @@
     width: 140px;
     object-fit: cover;
     margin-right: 25px;
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
   &__author-name {
     @extend %roboto-700;
