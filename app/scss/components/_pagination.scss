@@ -5,6 +5,9 @@
   &__arrows {
     position: relative;
     text-transform: uppercase;
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
   &__prev {
     margin-right: 28px;
